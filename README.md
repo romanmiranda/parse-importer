@@ -1,0 +1,38 @@
+#Parse Importer
+
+
+A tool to import the exported files from Parse.com to a MongoDB for Parse Server
+
+Usage:
+
+`node index.js _User.json`
+
+Options available:
+
+--db
+
+Specify the database to import, if it is not specified it use 'mongodb://localhost:27017/parse' by default
+
+`node index.js MyOption.json --db="mongodb://localhost:27017/dev"`
+
+To-Do:
+
+- Generate the schema from the files.
+- Add the progress bar and the import summary.
+- Better error handling.
+
+
+
+##Disclaimer
+
+THIS SOFTWARE IS PROVIDED BY ROMAN MIRANDA "AS IS" AND ANY
+EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR
+PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL INRIA OR ITS CONTRIBUTORS BE
+LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR
+CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF
+SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR
+BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY,
+WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
+OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN
+IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
